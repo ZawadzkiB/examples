@@ -1,0 +1,27 @@
+{
+  "personalData": {
+    "title": "Mr",
+    "firstName": "firstName",
+    "lastName": "lastName",
+    "email": "email@email.com",
+    "password": "12345678",
+    "dateOfBirth": "11-11-1989",
+    "signForNewsletter": true,
+    "signForSpecialOffers": true
+  },
+  "addressData": {
+    "firstName": "firstName",
+    "lastName": "lastName",
+    "company": "company",
+    "addressFirstLine": "first line of address 111",
+    "addressSecondLine": "second line of address 222",
+    "city": "city",
+    "state": "Utah",
+    "zipCode": "12345",
+    "country": "United States",
+    "additionalInformation": "some additional info",
+    "homePhone": "581235678",
+    "mobilePhone": "123456789",
+    "addressAlias": "address1"
+  }
+}

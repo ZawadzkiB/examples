@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.bzawadzki'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+def cucumberVersion = '4.7.1'
+def junitVersion = '5.5.0'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "io.cucumber:cucumber-java:${cucumberVersion}"
+    testImplementation "io.cucumber:cucumber-junit:${cucumberVersion}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:${junitVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}
