@@ -1,8 +1,7 @@
-### E2E example tests
+### API example tests
 
 Requirements:
 
-- google chrome browser
 - java 8 || 11
 
 to run tests type in terminal:
@@ -12,5 +11,3 @@ to run tests type in terminal:
 or for windows version
 
     gradlew.bat clean test
-    
-tests will run on google chrome browser.

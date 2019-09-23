@@ -25,5 +25,11 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform {
+        includeEngines("junit-vintage")
+        testLogging {
+            events("passed", "skipped", "failed")
+        }
+    }
 }
+

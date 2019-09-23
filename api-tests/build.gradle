@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.bzawadzki'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    compile "com.fasterxml.jackson.core:jackson-databind:2.6.0"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.5.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.5.0"
+    testImplementation 'io.rest-assured:rest-assured:4.1.1'
+}
+
+test {
+    useJUnitPlatform {
+        testLogging {
+            events("passed", "skipped", "failed")
+        }
+    }
+}

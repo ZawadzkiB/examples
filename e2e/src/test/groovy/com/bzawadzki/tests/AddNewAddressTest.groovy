@@ -27,7 +27,7 @@ class AddNewAddressTest extends Specification{
         close()
     }
 
-    def "add new address test"() {
+    def "add new address"() {
 
         given: "logged in user"
         MyAccountPage myAccountPage = TestCommons.open(REGISTRATION_PAGE)
